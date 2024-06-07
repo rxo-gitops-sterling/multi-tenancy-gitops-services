@@ -165,7 +165,7 @@ spp-instance:
             size: 150Gi
           name: sppvirgo
           service: spp
-      storage_class_name: ocs-storagecluster-cephfs
+      storage_class_name: ibmc-block-gold
       tls_secret: spp-tls
       usesameregistryforredhat: false
       version: 10.1.8.4124
