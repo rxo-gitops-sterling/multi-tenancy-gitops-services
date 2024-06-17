@@ -21,3 +21,9 @@ The prerequisites to install the Instana agent are:
 1. Modify the `instana-agent.cluster.name` value in the `instances\instana-agent\values.yaml` file which represents the name that will be assigned to this cluster in Instana.
 
 1. Modify the `instana-agent.zone.name` value in the `instances\instana-agent\values.yaml` file which is the custom zone that detected technologies will be assigned to.
+
+oc create secret docker-registry ibm-entitlement-key \
+  --docker-username=cp \
+  --docker-password=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJQk0gTWFya2V0cGxhY2UiLCJpYXQiOjE2NTQ2OTk3MzYsImp0aSI6IjA3Nzc0YjFjYjg2NjQ1MTViYjQ0MzNhZmI0YWZmMzg4In0.i_TWf0DSPWEni9MxEqwzwQrhD2alcht5OncF6IP4DnU \
+  --docker-server=cp.icr.io \
+  --namespace=<b2bi-prod
